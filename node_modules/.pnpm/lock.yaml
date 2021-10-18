@@ -1,0 +1,17 @@
+lockfileVersion: 5.3
+
+importers:
+
+  .:
+    specifiers: {}
+
+  pkg-a:
+    specifiers:
+      '@test-repo/pkg-b': workspace:*
+      pkg-alias: npm:@test-repo/pkg-b@*
+    dependencies:
+      '@test-repo/pkg-b': link:../pkg-b
+      pkg-alias: link:../pkg-b
+
+  pkg-b:
+    specifiers: {}

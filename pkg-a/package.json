@@ -1,0 +1,7 @@
+{
+    "name": "pkg-a",
+    "dependencies": {
+        "@test-repo/pkg-b": "workspace:*",
+        "pkg-alias": "workspace:@test-repo/pkg-b@*"
+    }
+}
